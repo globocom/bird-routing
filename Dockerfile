@@ -31,3 +31,6 @@ VOLUME /etc/bird/
 
 # Exposes BGP port by default. Expecify other protocol ports with 'docker run'
 EXPOSE 179/tcp
+
+# Starts bird service
+ENTRYPOINT service bird start && bash

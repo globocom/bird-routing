@@ -25,3 +25,6 @@ RUN apt-get install -y net-tools
 
 # Install BIRD Internet routing daemon
 RUN apt-get install -y bird
+
+# Create volume for configuration files
+VOLUME /etc/bird/

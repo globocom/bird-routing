@@ -10,17 +10,21 @@ Docker image of the [Bird Internet routing daemon](http://bird.network.cz/).
 ```bash
 $> docker run -d globocom/bird-routing
 ```
+Some Operating systems may not allow the Bird Daemon to load because it needs *privileged access*.
+Sometimes it will be necessary to run the container using **--privileged**. Be responsible with that!
+If you just want to get in the container up and running do:
+```bash
+$> docker run --name bird_router --interactive --tty --privileged --rm globocom/bird-routing 
+```
+
 If you want to override ```bird.conf``` file use:
 ```bash
 # IPv4 configuration file: /etc/bird/bird.conf
-$> docker run -v /host-machine/path/to/bird.conf:/etc/bird/bird.conf -d globocom/bird-routing
+$> docker run -v /host-machine/path/to/bird.conf:/etc/bird/bird.conf --privileged -d globocom/bird-routing
 
 # IPv6 configuration file: /etc/bird/bird6.conf
-$> docker run -v /host-machine/path/to/bird6.conf:/etc/bird/bird.conf -d globocom/bird-routing
+$> docker run -v /host-machine/path/to/bird6.conf:/etc/bird/bird.conf --privileged -d globocom/bird-routing
 ```
-
-> Some Operating systems may not allow the Bird Daemon to load because it needs *privileged access*.
-> Sometimes it will be necessary to run the container using **--privileged**. Be responsible with that!
 
 ## Building
 ```bash

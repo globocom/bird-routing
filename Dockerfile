@@ -19,3 +19,6 @@ RUN apt-get update
 
 # Installs ping
 RUN apt-get install -y iputils-ping
+
+# Installs net-tools (ifconfig, netstat, etc)
+RUN apt-get install -y net-tools

@@ -28,3 +28,6 @@ RUN apt-get install -y bird
 
 # Create volume for configuration files
 VOLUME /etc/bird/
+
+# Exposes BGP port by default. Expecify other protocol ports with 'docker run'
+EXPOSE 179/tcp

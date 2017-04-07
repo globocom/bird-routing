@@ -26,3 +26,8 @@ $> docker run -v /host-machine/path/to/bird6.conf:/etc/bird/bird.conf -d globoco
 ```bash
 $> docker build --tag bird:0.1.0 .
 ```
+> Use **--no-cache** to rebuild entirely the image
+
+## Contributing
+We are not restringent with that. Just fork, modify and send a pull request. Remember to describe well what you've done :)
+

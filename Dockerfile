@@ -12,3 +12,10 @@ FROM ubuntu:latest
 MAINTAINER Gustavo Pantuza <gustavopantuza@gmail.com>
 
 LABEL Description="Bird Internet routing daemon docker image" Vendor="Globo.com" Version="0.1.0"
+
+
+# Updates package manager repositories
+RUN apt-get update
+
+# Installs ping
+RUN apt-get install -y iputils-ping

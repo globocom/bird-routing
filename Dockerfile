@@ -22,3 +22,6 @@ RUN apt-get install -y iputils-ping
 
 # Installs net-tools (ifconfig, netstat, etc)
 RUN apt-get install -y net-tools
+
+# Install BIRD Internet routing daemon
+RUN apt-get install -y bird

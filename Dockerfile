@@ -32,4 +32,4 @@ VOLUME /etc/bird/
 EXPOSE 179/tcp
 
 # Starts bird service
-ENTRYPOINT service bird start && bash
+ENTRYPOINT service bird start 

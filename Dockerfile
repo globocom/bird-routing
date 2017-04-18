@@ -11,7 +11,7 @@ FROM ubuntu:latest
 
 MAINTAINER Gustavo Pantuza <gustavopantuza@gmail.com>
 
-LABEL Description="Bird Internet routing daemon docker image" Vendor="Globo.com" Version="0.1.0"
+LABEL Description="Bird Internet routing daemon docker image" Vendor="Globo.com" Version="0.2.0"
 
 
 # Updates package manager repositories and

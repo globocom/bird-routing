@@ -28,7 +28,7 @@ $> docker run -v /host-machine/path/to/bird6.conf:/etc/bird/bird.conf --privileg
 
 ## Building
 ```bash
-$> docker build --tag bird:0.1.0 .
+$> docker build --tag bird:0.2.0 .
 ```
 > Use **--no-cache** to rebuild entirely the image
 

@@ -1,0 +1,5 @@
+BIRD_RUN_USER=bird
+BIRD_RUN_GROUP=bird
+
+# Run with debug mode and in foreground
+BIRD_ARGS=-d
